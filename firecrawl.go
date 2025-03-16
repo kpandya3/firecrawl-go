@@ -37,30 +37,32 @@ type FirecrawlDocumentMetadata struct {
 	Language          *string              `json:"language,omitempty"`
 	Keywords          *StringOrStringSlice `json:"keywords,omitempty"`
 	Robots            *StringOrStringSlice `json:"robots,omitempty"`
-	OGTitle           *string              `json:"ogTitle,omitempty"`
-	OGDescription     *string              `json:"ogDescription,omitempty"`
-	OGURL             *string              `json:"ogUrl,omitempty"`
-	OGImage           *string              `json:"ogImage,omitempty"`
-	OGAudio           *string              `json:"ogAudio,omitempty"`
-	OGDeterminer      *string              `json:"ogDeterminer,omitempty"`
-	OGLocale          *string              `json:"ogLocale,omitempty"`
+	OGTitle           *StringOrStringSlice `json:"ogTitle,omitempty"`
+	OGDescription     *StringOrStringSlice `json:"ogDescription,omitempty"`
+	OGURL             *StringOrStringSlice `json:"ogUrl,omitempty"`
+	OGImage           *StringOrStringSlice `json:"ogImage,omitempty"`
+	OGAudio           *StringOrStringSlice `json:"ogAudio,omitempty"`
+	OGDeterminer      *StringOrStringSlice `json:"ogDeterminer,omitempty"`
+	OGLocale          *StringOrStringSlice `json:"ogLocale,omitempty"`
 	OGLocaleAlternate []*string            `json:"ogLocaleAlternate,omitempty"`
-	OGSiteName        *string              `json:"ogSiteName,omitempty"`
-	OGVideo           *string              `json:"ogVideo,omitempty"`
-	DCTermsCreated    *string              `json:"dctermsCreated,omitempty"`
-	DCDateCreated     *string              `json:"dcDateCreated,omitempty"`
-	DCDate            *string              `json:"dcDate,omitempty"`
-	DCTermsType       *string              `json:"dctermsType,omitempty"`
-	DCType            *string              `json:"dcType,omitempty"`
-	DCTermsAudience   *string              `json:"dctermsAudience,omitempty"`
-	DCTermsSubject    *string              `json:"dctermsSubject,omitempty"`
-	DCSubject         *string              `json:"dcSubject,omitempty"`
-	DCDescription     *string              `json:"dcDescription,omitempty"`
-	DCTermsKeywords   *string              `json:"dctermsKeywords,omitempty"`
-	ModifiedTime      *string              `json:"modifiedTime,omitempty"`
-	PublishedTime     *string              `json:"publishedTime,omitempty"`
-	ArticleTag        *string              `json:"articleTag,omitempty"`
-	ArticleSection    *string              `json:"articleSection,omitempty"`
+	OGSiteName        *StringOrStringSlice `json:"ogSiteName,omitempty"`
+	OGVideo           *StringOrStringSlice `json:"ogVideo,omitempty"`
+	DCTermsCreated    *StringOrStringSlice `json:"dctermsCreated,omitempty"`
+	DCDateCreated     *StringOrStringSlice `json:"dcDateCreated,omitempty"`
+	DCDate            *StringOrStringSlice `json:"dcDate,omitempty"`
+	DCTermsType       *StringOrStringSlice `json:"dctermsType,omitempty"`
+	DCType            *StringOrStringSlice `json:"dcType,omitempty"`
+	DCTermsAudience   *StringOrStringSlice `json:"dctermsAudience,omitempty"`
+	DCTermsSubject    *StringOrStringSlice `json:"dctermsSubject,omitempty"`
+	DCSubject         *StringOrStringSlice `json:"dcSubject,omitempty"`
+	DCDescription     *StringOrStringSlice `json:"dcDescription,omitempty"`
+	DCTermsKeywords   *StringOrStringSlice `json:"dctermsKeywords,omitempty"`
+	ModifiedTime      *StringOrStringSlice `json:"modifiedTime,omitempty"`
+	PublishedTime     *StringOrStringSlice `json:"publishedTime,omitempty"`
+	ArticleTag        *StringOrStringSlice `json:"articleTag,omitempty"`
+	ArticleSection    *StringOrStringSlice `json:"articleSection,omitempty"`
+	URL               *string              `json:"url,omitempty"`
+	ScrapeID          *string              `json:"scrapeId,omitempty"`
 	SourceURL         *string              `json:"sourceURL,omitempty"`
 	StatusCode        *int                 `json:"statusCode,omitempty"`
 	Error             *string              `json:"error,omitempty"`

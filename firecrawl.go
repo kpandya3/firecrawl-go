@@ -727,31 +727,6 @@ func (app *FirecrawlApp) monitorJobStatus(ID string, headers map[string]string, 
 		}
 		if status == "completed" {
 			if statusData.Data != nil {
-				allData := statusData.Data
-				for statusData.Next != nil {
-					resp, err := app.makeRequest(
-						http.MethodGet,
-						*statusData.Next,
-						nil,
-						headers,
-						"fetch next page of crawl status",
-						withRetries(3),
-						withBackoff(500),
-					)
-					if err != nil {
-						return nil, err
-					}
-
-					err = json.Unmarshal(resp, &statusData)
-					if err != nil {
-						return nil, err
-					}
-
-					if statusData.Data != nil {
-						allData = append(allData, statusData.Data...)
-					}
-				}
-				statusData.Data = allData
 				return &statusData, nil
 			} else {
 				attempts++
